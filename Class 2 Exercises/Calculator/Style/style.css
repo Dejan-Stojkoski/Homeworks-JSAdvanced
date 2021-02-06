@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+#calculator{
+    background-color: #000000;
+    width: 20%;
+}
+
+#screen{
+    height: 20px;
+    background-color: salmon;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.btn{
+    float: left;
+    width: 25%;
+    height: 25%;
+    background: #333333;
+    border-radius: 40%;
+    color: #ffffff;
+}
+#clear{
+    width: 75%;
+}
+#one{
+    clear: left;
+}
+#four{
+    clear: left;
+}
+#seven{
+    clear: left;
+}
+#zero{
+    clear: left;
+    width: 50%;
+}
