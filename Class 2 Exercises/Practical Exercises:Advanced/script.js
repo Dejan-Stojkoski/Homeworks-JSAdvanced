@@ -83,9 +83,9 @@ let a = [
 function printNestedArray(x){
     for(let i=0; i<x.length; i++){
         for(let j=0; j<x.length; j++){
-            printArray.innerHTML += `[${x[i]}] <br>`;
-            break;
+            printArray.innerHTML += `[${x[j]}] <br>`;
         }
+        break;
     }
 }
 
