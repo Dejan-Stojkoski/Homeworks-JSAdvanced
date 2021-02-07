@@ -1,0 +1,110 @@
+#coinDenomination{
+    background-color: #83be62;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #d6eed2;
+    height: 200px;
+}
+
+#coinDominationHeading{
+    text-align: center;
+}
+
+#coinDenominationForm{
+    display: flex;
+    justify-content: center;
+    background-color: #709e56;
+    height: 30px;
+}
+
+#coinDenominationInput{
+    background-color: #709e56;
+    border: 1px solid #8fb677;
+    height: 15px;
+    align-self: center;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+#coinDenominationInput::placeholder, #coinDenominationInput:focus{
+    color: #d6eed2;
+    text-align: center;
+}
+
+#coinDenominationBtn{
+    background-color: #77b852;
+    height: 20px;
+    align-self: center;
+    margin-left: 1%;
+    border-radius: 5px;
+    color: #dbf0d5;
+    border: 2px solid #8fb677;
+}
+#coinDenominationResult{
+    display: flex;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+#numberChecker{
+    background-color: #6e2c8e;
+    font-family: 'Ubuntu Mono', monospace;
+    height: 200px;
+}
+
+#numberCheckerHeading{
+    text-align: center;
+    color: #9e83ba;
+    background-color: #392059;
+}
+
+#numberCheckerForm{
+    display: flex;
+    justify-content: space-around;
+}
+
+#numberCheckerSpan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #392059;
+    height: 130px;
+}
+
+#numberCheckerInput{
+    height: 15px;
+    align-self: center;
+    margin-bottom: 2%;
+    width: 61%;
+    background-color: #9e83ba;
+    border-radius: 6px;
+    border: 1px solid #6e2c8e;
+}
+#numberCheckerInput::placeholder, #numberCheckerInput:focus{
+    text-align: center;
+    color: #f9effc;
+}
+
+#numberCheckerBtn{
+    height: 17px;
+    align-self: center;
+    margin-top: 2%;
+    background-color: #9e83ba;
+    border: 1px solid #6e2c8e;
+    border-radius: 6px;
+    color: #f9effc;
+}
+
+#numberCheckerResults{
+    background-color: #392059;
+    height: 130px;
+    width: 200px;
+    color: #9e83ba;
+}
+
+table{
+    margin-top: 4%;
+    margin-left: 2%;
+}
+table, tr, td, th{
+    border: 1px solid #6e2c8e;
+}
