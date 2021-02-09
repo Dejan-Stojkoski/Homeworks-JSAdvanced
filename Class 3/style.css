@@ -1,0 +1,26 @@
+table,th,tr,td{
+    border: 3px solid #242c3f;
+    background-color: #2d3447;
+    border-collapse: collapse;
+    color: #737683;
+}
+th{
+    color: #185b6d;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #20273a;
+}
+
+button{
+    background-color: #313c4e;
+    border-radius: 5px;
+    border: 1px solid #313c4e;
+    color: #449ac7;
+}
+button:hover{
+    background-color: #ee6676;
+    color: #313c4e;
+}
