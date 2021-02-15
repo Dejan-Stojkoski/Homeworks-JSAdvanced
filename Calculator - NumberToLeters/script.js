@@ -104,6 +104,8 @@ function separateDigits(number){
     return array;
 }//Returns an array with all the digits of a number
 
+separateDigits('-1')
+
 function lengthOne(display,number){
     display.append(`${checkNumberValue(parseInt(number))}`);
 }//One Digit Number
@@ -300,7 +302,7 @@ function lengthThirteenFourteenFifteen(display, number){
 function findRange(display, number){
     if(number<0){
         display.css("color", "#b85454")
-        display.append('The number is negative');
+        //display.append('The number is negative');
     }else if(parseInt(number) === 0){
         display.append('zero');
     }else if(number.length === 1){
@@ -333,6 +335,6 @@ $(document).ready(function(){
 
 btn.click(function(){
     display.html("");
-    display.css("color", "#89939e")
+    display.css("color", "#89939e");
     findRange(display,calculatorInput.val());
 })

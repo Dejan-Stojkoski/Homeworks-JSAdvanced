@@ -1,0 +1,18 @@
+#task1{
+    display: grid;
+}
+
+button{
+    width: 30%;
+    justify-self: center;
+    font-weight: bold;
+}
+
+#taks1Table{
+    justify-self: center;
+}
+
+table, tr, th ,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
