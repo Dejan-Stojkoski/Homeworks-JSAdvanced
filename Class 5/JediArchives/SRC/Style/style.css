@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small {
+    height: 30vh;
+}
+
+.imgBtn {
+    cursor: pointer;
+}
+
+.medium {
+    height: 40vh;
+}
+
+.yellow {
+    color: yellow;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.white {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+#result {
+    padding: 5%;
+}
+
+#loader {
+    display: none;
+    height: 10vh;
+}
+
+#nextBtn, #prevBtn {
+    display: none;
+}
+
+#errorMessage{
+    margin-bottom: 5%;
+    background-color: #262626;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid #fcdf2b;
+}
+
+#darthVader{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 300px;
+    margin-left: 10%;
+}
+
+#message{
+    margin-right: 25%;
+    color: black;
+    align-self: center;
+    text-align: center;
+    color: #fcdf2b;
+}
+
+#limitReached{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    height: 40%;
+    background: black;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}

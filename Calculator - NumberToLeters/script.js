@@ -104,8 +104,6 @@ function separateDigits(number){
     return array;
 }//Returns an array with all the digits of a number
 
-separateDigits('-1')
-
 function lengthOne(display,number){
     display.append(`${checkNumberValue(parseInt(number))}`);
 }//One Digit Number
