@@ -1,0 +1,41 @@
+body{
+    display: grid;
+    justify-content: center;
+    background-color: #91a9d1;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span{
+    margin-top: 20%;
+    justify-self: center;
+    text-align: center;
+}
+
+#display{
+    text-align: center;
+    margin-top: 10%;
+}
+
+tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #55608e;
+}
+
+span{
+    background-color: #6f89b7;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+}
+
+#searchInput{
+    width: 50%;
+    height: 25%;
+}
+#searchInput::placeholder{
+    color: black;
+}
