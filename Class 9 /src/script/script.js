@@ -8,7 +8,8 @@ let navService = {
     sortWindSpeed: document.getElementById("sortWindSpeed"),
     month: new Date().getMonth(),
     minutes: new Date().getMinutes(),
-    counter: 0,
+    counterMinute: 0,
+    counterMonth: 0,
     activateItem: function(item){
         for(let navItem of this.navItems){
             navItem.classList.remove("active");
@@ -22,8 +23,11 @@ let navService = {
         page.style.display = "block";
     },
     checkAPIRestrictions: function(){
-        if(this.minutes === new Date().getMinutes() && this.counter>59) return false;
-        else if(this.month === new Date().getMonth() && this.counter>999999) return false;
+        if(this.minutes !== new Date().getMinutes()) navService.counterMinute=0;
+        if(this.month !== new Date().getMonth()) navService.counterMonth=0;
+        console.log(this.counterMinute);
+        if(this.minutes === new Date().getMinutes() && navService.counterMinute>59) return false;
+        else if(this.month === new Date().getMonth() && navService.counterMonth>999999) return false;
         else return true;
     },
     registerNavListeners: function(){
@@ -88,7 +92,8 @@ let weatherService = {
             navService.pagingHourly(await response);
             uiService.statisticsCity.innerHTML = await response.city.name;
             uiService.hdCity.innerHTML = await response.city.name;
-            navService.counter++;
+            navService.counterMinute++;
+            navService.counterMonth++;
             uiService.toggleLoader(false);
             this.getCircleDataAsync(await response.city.coord.lat, await response.city.coord.lon);
             }
