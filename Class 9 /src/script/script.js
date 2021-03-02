@@ -110,7 +110,7 @@ let weatherService = {
         let response = await fetch(`${weatherService.apiUrl}find?lat=${lat}&lon=${lon}&cnt=${cnt}&units=metric&appid=${weatherService.apiKey}`);
         let data = await response.json();
         uiService.citiesInCircle(await data);
-        uiService.optionBtn.addEventListener('click', ()=>{
+        uiService.itemsToShow.addEventListener('change', ()=>{
             cnt = uiService.itemsToShow.value;
             this.getCircleDataAsync(lat, lon, cnt);
         })
@@ -165,7 +165,6 @@ let uiService = {
     cityInCenter: document.getElementById("cityInCenter"),
     citiesCircleResult: document.getElementById("citiesCircle"),
     itemsToShow: document.getElementById("itemsToShow"),
-    optionBtn: document.getElementById("optionBtn"),
     loader: document.getElementById("loader"),
     loadStatistics: function(data){
         let statisticsData = weatherService.agregateStatistics(data);
