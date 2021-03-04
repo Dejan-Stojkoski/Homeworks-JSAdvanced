@@ -17,9 +17,6 @@ function Student(firstName, lastName, age, academyName, studentId){
     this.study = function(){
         console.log(`The student ${this.firstName} is studing in the ${this.academyName}`);
     }
-    this.getAcademyName = function(){
-        console.log(`The student ${this.firstName} is in ${this.academyName}`);
-    }
 }
 
 let student1 = new Student('John', 'Johnsky', 20, 'SEDC', 1);
@@ -32,6 +29,11 @@ let student2 = new Student('Greg', 'Gregsky', 25, 'someAcademy', 2 );
 /*  Student.getAcademyName = function(){
     console.log(`The student ${this.firstName} is in ${this.academyName} academy`);
 }; */
+
+//Is this correct?
+Student.getAcademyName = function(student){
+	console.log(`The student ${student.firstName} is in ${student.academyName} academy.`);
+}
 
 function DesignStudent(firstName, lastName, age, studentId, isStudentOfTheMonth){
     Object.setPrototypeOf(this, new Student(firstName, lastName, age,"Academy for Design", studentId));
@@ -75,8 +77,8 @@ let john = new DesignStudent('John', 'Johnsky', 23, 5, false);
 let bob = new CodeStudent('Bob', 'Bobsky', 25, 23, true, false);
 let greg = new NetworkStudent('Greg', 'Gregsky', 33, 34, 2);
 
-john.getAcademyName();
-bob.getAcademyName();
-greg.getAcademyName();
+Student.getAcademyName(john);
+Student.getAcademyName(bob);
+Student.getAcademyName(greg);
 
 
