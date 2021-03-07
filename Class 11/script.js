@@ -19,8 +19,8 @@ function Student(firstName, lastName, age, academyName, studentId){
     }
 }
 
-let student1 = new Student('John', 'Johnsky', 20, 'SEDC', 1);
-let student2 = new Student('Greg', 'Gregsky', 25, 'someAcademy', 2 );
+/* let student1 = new Student('John', 'Johnsky', 20, 'SEDC', 1);
+let student2 = new Student('Greg', 'Gregsky', 25, 'someAcademy', 2 ); */
 
 /* Student.prototype.getAcademyName = function(student){
     console.log(student.academyName);
@@ -31,8 +31,12 @@ let student2 = new Student('Greg', 'Gregsky', 25, 'someAcademy', 2 );
 }; */
 
 //Is this correct?
-Student.getAcademyName = function(student){
+/* Student.getAcademyName = function(student){
 	console.log(`The student ${student.firstName} is in ${student.academyName} academy.`);
+} */
+
+Person.prototype.checkForAcademy = function (student){
+    console.log(student.academyName);
 }
 
 function DesignStudent(firstName, lastName, age, studentId, isStudentOfTheMonth){
@@ -77,8 +81,11 @@ let john = new DesignStudent('John', 'Johnsky', 23, 5, false);
 let bob = new CodeStudent('Bob', 'Bobsky', 25, 23, true, false);
 let greg = new NetworkStudent('Greg', 'Gregsky', 33, 34, 2);
 
-Student.getAcademyName(john);
+/* Student.getAcademyName(john);
 Student.getAcademyName(bob);
-Student.getAcademyName(greg);
+Student.getAcademyName(greg); */
 
+john.checkForAcademy(john);
+bob.checkForAcademy(bob);
+greg.checkForAcademy(greg);
 
